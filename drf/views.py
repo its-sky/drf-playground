@@ -1,5 +1,5 @@
 from .models import Blog
-from .serializer import BlogSerializer
+from .serializers import BlogSerializer
 
 from rest_framework import viewsets
 
