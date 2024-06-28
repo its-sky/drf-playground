@@ -20,5 +20,6 @@ from drf import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('user/', include('account.urls')),
     path('', include('drf.urls')),
 ]

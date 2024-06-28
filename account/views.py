@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .serializers import UserSerializer
 from .models import User
-from drf import generics
+from rest_framework import generics
 
 class UserCreate(generics.CreateAPIView):
     queryset = User.objects.all()
